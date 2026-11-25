@@ -73,6 +73,14 @@ Generate a declared set of independent candidates, score every candidate against
 
 **Reusable assets**: [Best-of-N skill](../../examples/skills/best-of-n/SKILL.md) and [TESTING.md proof record](../../examples/claude-md/TESTING.md)
 
+### [Verifying Agent Claims](./verifying-agent-claims.md) ⭐ NEW
+
+Whether an agent's "done" is true, which is a different question from whether the tests passed: the wrong-object failure, reproducing a number instead of quoting it, stating denominators, and watching a check fail before trusting it. Includes a measurement of 500 public setups.
+
+**When to use**: An agent reports success on work that costs something if it is wrong
+
+**Reusable assets**: [done-claim-gate.sh](../../examples/hooks/bash/done-claim-gate.sh) `Stop` hook
+
 ### [Skeleton Projects](./skeleton-projects.md) ⭐ NEW
 
 Use existing battle-tested repositories as scaffolding for new projects.
@@ -276,6 +284,7 @@ Multi-session task tracking with TodoWrite, tasks API, and context persistence a
 | **Complex feature** | [Plan-Driven](./plan-driven.md) or [Spec-First](./spec-first.md) |
 | **Need reliability** | [TDD with Claude](./tdd-with-claude.md) |
 | **Several plausible solutions with a stable rubric** | [Best-of-N](./best-of-n.md) |
+| **Checking whether an agent's "done" is true** | [Verifying Agent Claims](./verifying-agent-claims.md) |
 | **Large refactoring** | [Search Tools Mastery](./search-tools-mastery.md) |
 | **UI implementation** | [Design to Code](./design-to-code.md) |
 | **Code quality** | [Iterative Refinement](./iterative-refinement.md) |

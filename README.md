@@ -178,6 +178,7 @@ Context quality affects every tool call and decision. Start with project instruc
 | Build bounded autonomous loops | [Agentic Software Factories](./guide/workflows/agentic-software-factories.md) |
 | Review code systematically | [Code Review](./guide/workflows/code-review.md) |
 | Make agent-written changes reviewable | [Reviewable Agent Changes](./guide/workflows/reviewable-agent-changes.md) |
+| Check whether an agent's "done" is true | [Verifying Agent Claims](./guide/workflows/verifying-agent-claims.md) |
 | Prepare a contribution another team can review | [AI-Assisted Open Source Contributions](./guide/workflows/ai-assisted-open-source-contributions.md) |
 | Diagnose unfamiliar repositories | [Exploration Workflow](./guide/workflows/exploration-workflow.md) |
 

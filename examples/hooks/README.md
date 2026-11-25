@@ -33,6 +33,7 @@ Hooks are scripts that execute automatically on Claude Code events. They enable 
 | [rtk-auto-wrapper.sh](./bash/rtk-auto-wrapper.sh) | PreToolUse | Rewrite verbose commands to `rtk <command>` via `updatedInput` | Bash |
 | [setup-init.sh](./bash/setup-init.sh) | Setup | Log and report project state for `--init-only` or `-p --init` runs | Bash |
 | [auto-checkpoint.sh](./bash/auto-checkpoint.sh) | Stop | Snapshot tracked changes into a git stash after each response | Bash |
+| [done-claim-gate.sh](./bash/done-claim-gate.sh) | Stop | Ask once for a named object when a completion claim rests only on a generic pass | Bash |
 | [typecheck-on-save.sh](./bash/typecheck-on-save.sh) | PostToolUse | Run TypeScript checks on save | Bash |
 | [test-on-change.sh](./bash/test-on-change.sh) | PostToolUse | Run tests on file changes | Bash |
 | [output-validator.sh](./bash/output-validator.sh) | PostToolUse | Heuristic output validation | Bash |

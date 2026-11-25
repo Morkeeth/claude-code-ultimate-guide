@@ -98,6 +98,14 @@ deep_dive:
   reviewable_agent_changes_stale_notes: "guide/workflows/reviewable-agent-changes.md#anchoring-and-stale-notes" # hunk hash, then line text, else stale; covered by template tests
   reviewable_agent_changes_typed_feedback: "guide/workflows/reviewable-agent-changes.md#feedback-typed-as-a-question-or-a-change" # Question vs Change; Lopopolo defer or push back; diffo intents
   reviewable_agent_changes_template: "examples/skills/agent-rationale/" # rationale.py add/show, refs/notes/rationale, 9 tests in throwaway repos
+  # Verifying agent claims (guide/workflows/verifying-agent-claims.md) - Added 2026-11-25
+  verifying_agent_claims_guide: "guide/workflows/verifying-agent-claims.md" # is the agent's done true; separate from whether tests passed
+  verifying_agent_claims_wrong_object: "guide/workflows/verifying-agent-claims.md#1-the-wrong-object" # a check correct about a narrower object than its label; probe the object, not the document
+  verifying_agent_claims_reproduce: "guide/workflows/verifying-agent-claims.md#2-reproduce-the-number-do-not-quote-it" # re-derive numbers handed between agents where being wrong costs something
+  verifying_agent_claims_denominator: "guide/workflows/verifying-agent-claims.md#3-state-the-denominator-and-let-it-fail" # a zero denominator should fail; adjacency is a claim
+  verifying_agent_claims_red_watch: "guide/workflows/verifying-agent-claims.md#4-red-watch-every-check" # break it, see red, restore, see green
+  verifying_agent_claims_field_data: "guide/workflows/verifying-agent-claims.md#what-the-field-actually-does" # 500 public .claude/settings.json read 2026-09-05; 7 of 248 hook users have a misspelled event name
+  done_claim_gate_hook: "examples/hooks/bash/done-claim-gate.sh" # Stop hook; asks once for a named object; stderr, stop_hook_active, fails open
   # Rules Templates (auto-loaded .claude/rules/)
   rules_templates_directory: "examples/rules/"
   rules_architecture_review: "examples/rules/architecture-review.md"
@@ -4110,6 +4118,14 @@ section_maps:
     - "github-to-monitor-to-codex-a-safe-pipeline"
     - "github-actions-is-a-separate-path"
     - "routines-useful-but-not-a-local-monitor"
+  "guide/workflows/verifying-agent-claims.md":
+    - "1-the-wrong-object"
+    - "2-reproduce-the-number-do-not-quote-it"
+    - "3-state-the-denominator-and-let-it-fail"
+    - "4-red-watch-every-check"
+    - "what-the-field-actually-does"
+    - "a-hook-you-can-run"
+    - "checklist"
   "guide/workflows/reviewable-agent-changes.md":
     - "why-the-diff-is-not-enough"
     - "what-an-agent-note-records"
